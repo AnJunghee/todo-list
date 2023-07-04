@@ -1,0 +1,42 @@
+/* reset */
+html { font-size: 62.5%; }
+html, body { width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden; font-family: 'Pretendard'; }
+h1,h2,h3,h4,h5,h6,ul,li,div,p,span, input { margin: 0; padding: 0; text-decoration: none; list-style: none; color: #fff; } 
+@font-face { font-family: 'Pretendard'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); font-weight: 400; font-style: normal; }
+
+
+body { position: relative; }
+.hidden { visibility: hidden; opacity: 0; }
+.bgImg { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; }
+
+#wrap { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+#wrap h1 { font-size: 2.8rem; }
+#wrap h3 { font-size: 4rem; }
+#wrap input { width: 530px; padding: 10px; font-size: 4rem; background: inherit; border: none; border-bottom: 3px solid #fff; text-align: center; }
+#wrap input:focus { outline: none; }
+#wrap #login-form { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: all 1s; }
+#wrap #todo-wrap { transition: all 3s; }
+#wrap #todo-wrap #clock { font-size: 10rem; }
+#wrap #todo-wrap #todo-list li { width: 550px; display: flex; justify-content: space-between; margin: 10px 0; font-size: 3rem; text-align: left; word-break: break-word; }
+#wrap #todo-wrap #todo-list li button { border: none; background: inherit; }
+
+#quote { position: absolute; left: 50%; bottom: 30px; transform: translateX(-50%); font-size: 18px; text-align: center; transition: all 3s; }
+#weather { position: absolute; top: 10px; right: 10px; font-size: 1.8rem; }
+
+/* margin */
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mt-50 { margin-top: 50px; }
+.mt-100 { margin-top: 100px; }
+
+@media all and (max-width:767px) {
+    #wrap h1 { font-size: 2rem; }
+    #wrap h3 { font-size: 2.6rem; }
+    #wrap input { width: 320px; padding: 10px 0; font-size: 2.4rem; }
+    #wrap #todo-wrap #todo-list li { width: 320px; font-size: 2rem; }
+
+    #quote { width: 90%; font-size: 1.6rem; }
+    #weather { font-size: 1.4rem; }
+}
